@@ -1,0 +1,112 @@
+body{ 
+
+    display: flex;
+    justify-content: space-around;
+   background-image: url(Images/landscape.png.crdownload);
+   font-family: 'Press Start 2P';
+    } 
+/* The body is a flexbox. The left bar, right bar, and center content are all items within it.*/
+
+#leftbar {display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+ }
+/* the left bar uses a column flex direction so that the pokemon images can be displayed vertically. */
+
+#rightbar {display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+       }
+/* the right bar uses a column flex direction so that the pokemon images can be displayed vertically. */
+
+
+.pokemonname {padding-left: 200px;
+padding-right: 200px;
+font-size: 20 pt;
+}
+/* this styling applies to the pokemon header name within each modal */
+
+.modal{max-width: 700px;
+text-align: center;}
+/* this makes sure that the modal boxes have a width limit. It also formats the text within. */
+
+ .pokemon {height: 120px;}
+ /* this targets all of the pokemon images on either side of the screen. */
+
+ .invisible {opacity: 0%;}
+ /* the start button's class is toggled to be invisible when it is not in use in order to hide it. */
+
+.display {height: 300px;}
+/* this sets the size of each of the pokemon images that appear in each modal. */
+
+
+
+#center 
+{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+flex-basis: 1000px;}
+
+/* the center content is a flexbox which contains the "find your pokemon" text, the help button, and all of the month and day buttons */
+/* the flex basis is set in order to stop the formatting from changing whenever more buttons are created. */
+
+
+#helplink
+{color: white;
+font-size: 20pt;
+padding-top: 50px;
+padding-bottom: 50px;}
+/* this formatting applies to the link that takes the user to the help page as well as the link that takes them back to the home page */
+
+
+
+#helpbody {display: flex;
+flex-direction: column;
+align-items: center;}
+/* this sets the body ofthe help page to be a flexbox so that content can be formatted vertically */
+
+
+p6 {
+ padding-top: 50px;
+color:white;
+font-size: 32pt;}
+/* this p6 is the page header that says "find your pokemon" */
+
+#helptext {color: white;
+    font-family: 'Press Start 2P';
+font-size: 20pt;
+max-width: 1000px;}
+/* this makes sure that the text on the help screen is formatted correctly */
+
+
+p3 {
+display: flex;
+color: white;
+gap: 0px;
+max-height: 100px;
+justify-content: center;
+align-items: flex-start;
+flex-wrap: wrap;
+}
+/* this p3 is the container that all the day and month buttons are appended to.
+the max height stops the buttons from extending too far vertically. 
+The flex display setting make sure that the buttons stay centered */
+
+
+button {
+  border-color: white;
+ width: 110px !important;
+ max-width: 100% !important;
+ max-height: 100% !important;
+height: 110px !important;
+text-align: center;
+padding: 0px;
+font-size:12px;
+background-color: transparent;
+font-weight: bold;
+font-family: 'Press Start 2P';}
+/* this sets the formatting for all of the buttons */
+
+
+

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+ 
+    <!-- This is the "left bar" div. All of the elements within fit onto the left side of the screen.
+    Each of these is an image of a pokemon with an Id that corresponds to a modal button. This is 
+    so that each one can have a respective modal screen. -->
+    
+    <div Id="leftbar">  
+      <img Id="modalbutton1" Class=pokemon src="Images/sawsbuckbit.png" alt="">
+      <img Id="modalbutton2" Class=pokemon src="Images/simipourbit.png" alt="">
+      <img Id="modalbutton3" Class=pokemon src="Images/alomomolabit.png" alt="">
+      <img Id="modalbutton4" Class=pokemon src="Images/whimsicottbit.png" alt="">
+      <img Id="modalbutton5" Class=pokemon src="Images/bouffalantbit.png" alt="">
+      <img Id="modalbutton6" Class=pokemon src="Images/klinkbit.png" alt="">
+ </div>
+
+
+
+ <!-- the HELP text links to a help screen -->
+    
+    <div Id="center">
+      <p6>Find Your Pokemon</p6>
+ <a 
+ id="helplink"
+ href="Help Screen.html">HELP</a>
+
+ <!-- this is the button that starts the process -->
+ 
+ <button id="startbutton">Press to start</button>
+  
+<!-- 
+ Each of these modal screens contains information about a particular pokemon.
+ They have unique ids so that they can be individually selected. The Images and
+ text in each modal has a class for the sake of formatting. -->
+
+  <dialog class="modal" id="modal1">
+    <img class = display src="Images/sawsbuckbit.png" alt="">
+    <h class="pokemonname">Sawsbuck</h>
+  <p >Sawsbuck's appearance changes depending on the season. During the spring, a tuft of cream fur appears on its chest, 
+    and its antlers are adorned with pink flowers. During the summer, its tail points up, it grows tufts of fur on the back of its head,
+     and its antlers sport green leaves. During the fall, it sports a cream tuft of fur on its chest, 
+     and the leaves on its antlers are red and brown. 
+     During the winter, the cream fur turns white, tufts of white fur appear on its chest and lower limbs, 
+     and its antlers are coated in white.</p>
+  <button class="button close-button1">close</button>
+  </dialog>
+
+
+  <dialog class="modal" id="modal2">
+    <img class = display src="Images/simipourbit.png" alt="">
+  <h class="pokemonname">Simipour</h>
+  <p>Simipour is a simian Pokémon that is primarily blue. Its ears are broad with light blue insides, 
+    and it has oval eyes and a small black nose. There are several tufts of fur on its head, which resemble dreadlocks. 
+    These tufts can store water, which it collects with its tail. Simipour has a white marking around its neck that resembles a ruff; 
+    and a cream-colored face, hands, arms, legs, and feet. Its hands have five fingers, and its feet have three toes. 
+    Its tail is tipped with a blue plume, resembling a spout of water. 
+    This tail can shoot water at such high pressure that it can destroy a concrete wall. Simipour prefers to live near clean water.</p>
+   <button class="button close-button2">close</button>
+   </dialog>
+
+
+   <dialog class="modal" id="modal3">
+    <img class = display src="Images/alomomolabit.png" alt="">
+    <h class="pokemonname">Alomomola</h>
+    <p>Alomomola lives in the open seas. If it finds an injured Pokémon floating at sea,
+       it will heal the Pokémon's wounds using its membrane and carry it back to shore.
+        Alomomola does this because any predators coming for the injured Pokémon could also come for Alomomola.
+         Alomomola swims alongside smaller Pokémon to accompany them; thus, many water Pokémon gather around it. 
+         Fishermen take Alomomola during long voyages, saving the need to have a doctor or medicine on ships.</p>
+   <button class="button close-button3">close</button>
+   </dialog>
+  
+   
+   <dialog class="modal" id="modal4">
+    <img class = display src="Images/whimsicottbit.png" alt="">
+    <h class="pokemonname">Whimsicott</h>
+    <p>Whimsicott can manipulate its body to pass through cracks, no matter how narrow.
+       It takes advantage of this ability as a notorious prankster, moving things and leaving cotton balls behind. 
+       However, should it get wet, it will be too heavy to move and answer for its pranks. Despite weighing 14.6 lbs (6.6 kg),
+        Whimsicott appears capable of "riding upon the wind" but whether this means they actually generate whirlwinds themselves
+         or get carried by wind currents remains unclear. Whimsicott likes to spend time in the sunlight in order to grow its cotton, 
+         though it will tear off and scatter the cotton should it start to build up too much.</p>
+   <button class="button close-button4">close</button>
+   </dialog>
+
+   <dialog class="modal" id="modal5">
+    <img class = display src="Images/bouffalantbit.png" alt="">
+    <h class="pokemonname">Bouffalant</h>
+    <p>Bouffalant is a bovine Pokémon with a large, dark afro on its head. Two large, curving horns, 
+      each with two golden growths resembling rings, protrude from the afro. 
+      It has a shaggy brown hide that ends at its knees and does not cover its face. 
+      A large, gray nose sits at the end of its short, beige snout, and its yellow eyes are partly hidden by its hair.
+       There are black tear markings directly below its eyes. Each of its beige legs has a single, gray hoof and its tail ends
+        in a stubby tuft of fur.</p>
+   <button class="button close-button5">close</button>
+   </dialog>
+
+   <dialog class="modal" id="modal6">
+    <img class = display src="Images/klinkbit.png" alt="">
+    <h class="pokemonname">Klink</h>
+    <p>Klink is a Pokémon resembling two interlocking gears with six teeth each.
+       The teeth of the gears are light-gray, with a darker central region. 
+       Each gear has a white "X" in place of its left eye, while their right eyes have a black pupil and white sclerae. 
+       They have round turquoise noses and small mouths. Once two bodies have joined, 
+       they cannot combine with any others or they will become separated. Klink generates its life energy by spinning, 
+       and is generally found in caves.</p>
+   <button class="button close-button6">close</button>
+   </dialog>
+ 
+   <dialog class="modal" id="modal7">
+    <img class = display src="Images/crustlebit.png" alt="">
+    <h class="pokemonname"> Crustle</h>
+    <p>Crustle is very strong, to the point that it can carry heavy rocks for a long time, 
+      even through arid lands where it resides. It fights members of its species over territory in battles which can become very vicious.
+       If its shell breaks during such a fight, it loses. When Crustle's shell breaks, it will become weaker and unsure of itself. 
+       Crustle's biggest strength is its thick claws.</p>
+   <button class="button close-button7">close</button>
+   </dialog>
+
+   <dialog class="modal" id="modal8">
+    <img class = display src="Images/braviarybit.png" alt="">
+    <h class="pokemonname">Braviary</h>
+    <p>Braviary is extremely aggressive, but for noble reasons. It is known for its bravery and pride,
+       and will fight fiercely to help and protect its friends. Even if it is injured or has its life threatened,
+        it will still fight. The more scars it has on its front, the more respect it gets from its peers. 
+        Scars on its back will bring it ridicule, however. It has earned the nickname "the hero of the skies"
+         due to its extreme dedication for its friends. Aiding its valiance, Braviary is extremely strong, capable of
+          lifting a car and flying with it. </p>
+   <button class="button close-button8">close</button>
+   </dialog>
+
+   <dialog class="modal" id="modal9">
+    <img class = display src="Images/gothoritabit.png" alt="">
+    <h class="pokemonname"> Gothorita</h>
+    <p>Gothorita uses starlight as the source of its power, and is able to use its psychic powers to arrange rocks into the shapes of 
+      constellations. It can also use these powers to control people and Pokémon with hypnosis, leading people astray and putting children 
+      to sleep before kidnapping them. Because of this, Gothorita is known as the Witch of Punishment. 
+      Some people believe Gothorita is from outer space, although this connection is yet to be confirmed.</p>
+   <button class="button close-button9">close</button>
+   </dialog>
+
+   <dialog class="modal" id="modal10">
+    <img class = display src="Images/lampentbit.png" alt="">
+    <h class=pokemonname>Lampent</h>
+    <p>Lampent can sense when someone is about to die, whom it visits and steals the spirit from the person's body.
+       Though most often found in deep forests, it quietly wanders through cities and hangs around near hospitals to absorb the
+        spirits of the fallen. It also pretends to be a lamp while in cities. Because of this, Lampent is feared as the emissary 
+        of death. It uses the spirits it has absorbed to fuel its fire</p>
+   <button class="button close-button10">close</button>
+   </dialog>
+
+    <dialog class="modal" id="modal11">
+      <img class = display src="Images/scolipedebit.png" alt="">
+      <h class=pokemonname>Scolipede</h>
+    <p>Scolipede lives in lush forests. It is very aggressive and will not give up until victorious. 
+      This Pokémon chases down enemies with great speed and then attacks relentlessly with its horns until it prevails. 
+      It latches onto the prey with the claw's toxic spikes and then slams it into the ground for the deadly poison effect.</p>
+   <button class="button close-button11">close</button>
+   </dialog>
+
+   <dialog class="modal" id="modal12">
+    <img class = display src="Images/fraxurebit.png" alt="">
+    <h class=pokemonname>Fraxure</h>
+    <p>Fraxure is very violent and territorial. Fights over turf often break out between it and another Fraxure.
+       After a fight, it sharpens its tusks on river rocks, as they do not regenerate. It lives alongside rivers. 
+       Fraxure uses its tusks only when necessary. The reason is once its tusks break, Fraxure will be unable to use it again.
+        Fraxure uses its tusks to cut the prey in two different food portions, one for eating now and the second portion for later.</p>
+   <button class="button close-button12">close</button>
+   </dialog>
+
+
+
+ <!-- The empty p3 exists so that elements can be appended to it later. Once the user 
+ clicks the start button, a button for each month will appear. These buttons will all 
+ be appended to this p3. -->
+ 
+  <p3></p3>
+</div>
+    
+    <!-- This is the "right bar" div. All of the elements within fit onto the right side of the screen.
+    Each of these is an image of a pokemon with an Id that corresponds to a modal button. This is 
+    so that each one can have a respective modal screen. -->
+
+
+  <div Id="rightbar">
+    <img Id="modalbutton7" Class=pokemon src="Images/crustlebit.png" alt="">
+    <img Id="modalbutton8" Class=pokemon src="Images/braviarybit.png" alt="">
+    <img Id="modalbutton9" Class=pokemon src="Images/gothoritabit.png" alt="">
+    <img Id="modalbutton10"Class=pokemon src="Images/lampentbit.png" alt="">
+    <img Id="modalbutton11"Class=pokemon src="Images/scolipedebit.png" alt="">
+    <img Id="modalbutton12"Class=pokemon src="Images/fraxurebit.png" alt="">
+
+
+ </div>
+    
+    
+    
+    
+    
+    
+    
+ <script type="text/javascript" src="main.js">
+      
+    </script>
+  </body>
+</html> 
